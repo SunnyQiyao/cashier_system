@@ -1,13 +1,22 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <!--左侧导航-->
+    <leftNav></leftNav>
+    
+    <!--右侧内容区域1-->
+    <div class="right_content">
+        <router-view/>
+    </div>
   </div>
 </template>
 
 <script>
+import leftNav from '@/components/common/leftNav'
 export default {
-  name: 'App'
+  name: 'App',
+  components:{
+    leftNav
+  }
 }
 </script>
 
@@ -18,6 +27,13 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+.right_content{
+  width: 94%;
+  height: 100%;
+  padding-left:6%;
+}
+.el-tabs__nav-wrap{
+    padding-left:15px!important;
 }
 </style>

@@ -1,4 +1,4 @@
-# cashier_system
+# cashier
 
 > A Vue.js project
 

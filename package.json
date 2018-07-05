@@ -1,8 +1,8 @@
 {
-  "name": "cashier_system",
+  "name": "cashier",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "sunny <1300410356@qq.com>",
+  "author": "sunny",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
@@ -10,6 +10,8 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "axios": "^0.18.0",
+    "element-ui": "^2.4.3",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
